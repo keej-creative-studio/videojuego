@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cys03q34jt762"]
+[gd_scene load_steps=4 format=3 uid="uid://cys03q34jt762"]
 
 [ext_resource type="Script" path="res://scripts/menus/in_game_menu.gd" id="1_4hjsv"]
 [ext_resource type="Theme" uid="uid://giidcej8oij7" path="res://asssets/ui/menu_theme.tres" id="2_sdrml"]
+
+[sub_resource type="FontFile" id="FontFile_vdfs6"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [node name="InGameMenu" type="Control" node_paths=PackedStringArray("active_host_label", "game_id_label")]
 layout_mode = 3
@@ -90,6 +97,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/normal_font = SubResource("FontFile_vdfs6")
 text = "Game ID"
 
 [node name="CopyGameId" type="Button" parent="ConnectionInfoPanel/GridContainer/GameIdPanel"]
