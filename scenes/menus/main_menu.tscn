@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bdt8oshccf8uk" path="res://scripts/menus/main_menu.gd" id="1_1dabp"]
 [ext_resource type="Theme" uid="uid://giidcej8oij7" path="res://asssets/ui/menu_theme.tres" id="2_b784e"]
-[ext_resource type="Texture2D" uid="uid://yli35jpr7rkb" path="res://asssets/ui/menu-bg.jpg" id="2_yqvau"]
+[ext_resource type="Texture2D" uid="uid://c1efoih6jyp5i" path="res://asssets/ui/menu-bg.png" id="3_2o76q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_413xs"]
 
@@ -35,7 +35,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_yqvau")
+texture = ExtResource("3_2o76q")
 expand_mode = 2
 
 [node name="Menu" type="Panel" parent="." unique_id=887031912]
