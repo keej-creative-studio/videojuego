@@ -3,9 +3,9 @@ extends Control
 signal secondary_menu_completed
 signal secondary_menu_cancelled
 
-const NORAY_CLIENT_PLACEHOLDER_TEXT = "Enter Host's Game ID"
-const NORAY_HOSTING_LABEL = "Host Game with Noray!"
-const NORAY_CLIENT_CONNECT_LABEL = "Connect to game on Noray!"
+const NORAY_CLIENT_PLACEHOLDER_TEXT = "CODIGO DE SALA"
+const NORAY_HOSTING_LABEL = "CREAR PARTIDA ONLINE"
+const NORAY_CLIENT_CONNECT_LABEL = "UNIRSE A PARTIDA ONLINE"
 
 @export var go_button: Button
 @export var back_button: Button

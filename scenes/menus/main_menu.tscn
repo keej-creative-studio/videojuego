@@ -1,12 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://ffncciksi1tw"]
+[gd_scene format=3 uid="uid://ffncciksi1tw"]
 
-[ext_resource type="Script" path="res://scripts/menus/main_menu.gd" id="1_1dabp"]
+[ext_resource type="Script" uid="uid://bdt8oshccf8uk" path="res://scripts/menus/main_menu.gd" id="1_1dabp"]
 [ext_resource type="Theme" uid="uid://giidcej8oij7" path="res://asssets/ui/menu_theme.tres" id="2_b784e"]
 [ext_resource type="Texture2D" uid="uid://yli35jpr7rkb" path="res://asssets/ui/menu-bg.jpg" id="2_yqvau"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_413xs"]
 
-[node name="MainMenu" type="Control" node_paths=PackedStringArray("host_game_button", "join_game_button", "secondary_network_menu_parent", "toggle_secondary_network_checkbox")]
+[node name="MainMenu" type="Control" unique_id=1955195456 node_paths=PackedStringArray("host_game_button", "join_game_button", "secondary_network_menu_parent", "toggle_secondary_network_checkbox")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +20,7 @@ join_game_button = NodePath("Menu/JoinGame")
 secondary_network_menu_parent = NodePath("SecondaryNetworkMenuParent")
 toggle_secondary_network_checkbox = NodePath("Menu/SecondaryToggle")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=1654795989]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MenuBackground" type="TextureRect" parent="Panel"]
+[node name="MenuBackground" type="TextureRect" parent="Panel" unique_id=181979611]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -38,7 +38,7 @@ grow_vertical = 2
 texture = ExtResource("2_yqvau")
 expand_mode = 2
 
-[node name="Menu" type="Panel" parent="."]
+[node name="Menu" type="Panel" parent="." unique_id=887031912]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
@@ -49,7 +49,7 @@ offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Exit" type="Button" parent="Menu"]
+[node name="Exit" type="Button" parent="Menu" unique_id=1847908912]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -60,39 +60,41 @@ offset_right = -39.0
 offset_bottom = 103.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 48
-text = "Exit"
+text = "salir
+"
 flat = true
 
-[node name="SecondaryToggle" type="CheckButton" parent="Menu"]
+[node name="SecondaryToggle" type="CheckButton" parent="Menu" unique_id=1186702414]
 layout_mode = 0
 offset_left = 60.0
 offset_top = 16.0
 offset_right = 277.0
 offset_bottom = 50.0
 theme_override_font_sizes/font_size = 18
-text = "Enable Noray P2P"
+text = "modo online
+"
 flat = true
 
-[node name="HostGame" type="Button" parent="Menu"]
+[node name="HostGame" type="Button" parent="Menu" unique_id=405233788]
 custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
+layout_mode = 0
 offset_left = 61.0
 offset_top = 62.0
 offset_right = 314.0
 offset_bottom = 113.0
-text = "Host Game"
+text = "crear partida"
 flat = true
 
-[node name="JoinGame" type="Button" parent="Menu"]
-layout_mode = 2
+[node name="JoinGame" type="Button" parent="Menu" unique_id=56644164]
+layout_mode = 0
 offset_left = 55.0
 offset_top = 125.0
 offset_right = 308.0
 offset_bottom = 176.0
-text = "Join Game"
+text = "unirse a partida"
 flat = true
 
-[node name="SecondaryNetworkMenuParent" type="Panel" parent="."]
+[node name="SecondaryNetworkMenuParent" type="Panel" parent="." unique_id=529591979]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
